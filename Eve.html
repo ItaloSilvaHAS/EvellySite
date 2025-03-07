@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubra seu Tipo Ideal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <!-- Página Inicial -->
+    <div id="home-page" class="page active">
+      <h1>Descubra seu Tipo Ideal de Homem</h1>
+      <button id="discover-btn">Descubra</button>
+    </div>
+
+    <!-- Questionário -->
+    <div id="quiz-page" class="page">
+      <h2>Questionário</h2>
+      <form id="quiz-form">
+        <!-- Pergunta 1 -->
+        <div class="question">
+          <p>1. Qual é a sua sexualidade?</p>
+          <label><input type="radio" name="sexuality" value="hetero"> Heterossexual</label>
+          <label><input type="radio" name="sexuality" value="homo"> Homossexual</label>
+          <label><input type="radio" name="sexuality" value="bi"> Bissexual</label>
+          <label><input type="radio" name="sexuality" value="outro"> Outro</label>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question">
+          <p>2. Qual é a sua preferência de personalidade?</p>
+          <label><input type="radio" name="personality" value="extrovertido"> Extrovertido</label>
+          <label><input type="radio" name="personality" value="introvertido"> Introvertido</label>
+          <label><input type="radio" name="personality" value="equilibrado"> Equilibrado</label>
+          <label><input type="radio" name="personality" value="misterioso"> Misterioso</label>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question">
+          <p>3. Qual é o seu estilo de vida ideal?</p>
+          <label><input type="radio" name="lifestyle" value="aventureiro"> Aventureiro</label>
+          <label><input type="radio" name="lifestyle" value="caseiro"> Caseiro</label>
+          <label><input type="radio" name="lifestyle" value="social"> Social</label>
+          <label><input type="radio" name="lifestyle" value="intelectual"> Intelectual</label>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question">
+          <p>4. O que você mais valoriza em um parceiro?</p>
+          <label><input type="radio" name="value" value="honestidade"> Honestidade</label>
+          <label><input type="radio" name="value" value="humor"> Humor</label>
+          <label><input type="radio" name="value" value="inteligencia"> Inteligência</label>
+          <label><input type="radio" name="value" value="carinho"> Carinho</label>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="question">
+          <p>5. Qual é o seu tipo de encontro ideal?</p>
+          <label><input type="radio" name="date" value="jantar"> Jantar romântico</label>
+          <label><input type="radio" name="date" value="cinema"> Cinema</label>
+          <label><input type="radio" name="date" value="viagem"> Viagem</label>
+          <label><input type="radio" name="date" value="esportes"> Esportes</label>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="question">
+          <p>6. Como você descreveria sua comunicação?</p>
+          <label><input type="radio" name="communication" value="direta"> Direta e objetiva</label>
+          <label><input type="radio" name="communication" value="calma"> Calma e paciente</label>
+          <label><input type="radio" name="communication" value="animada"> Animada e expressiva</label>
+          <label><input type="radio" name="communication" value="reservada"> Reservada e discreta</label>
+        </div>
+
+        <!-- Pergunta 7 -->
+        <div class="question">
+          <p>7. Qual é a sua prioridade em um relacionamento?</p>
+          <label><input type="radio" name="priority" value="confianca"> Confiança</label>
+          <label><input type="radio" name="priority" value="diversao"> Diversão</label>
+          <label><input type="radio" name="priority" value="crescimento"> Crescimento mútuo</label>
+          <label><input type="radio" name="priority" value="seguranca"> Segurança emocional</label>
+        </div>
+
+        <!-- Pergunta 8 -->
+        <div class="question">
+          <p>8. Como você lida com conflitos?</p>
+          <label><input type="radio" name="conflict" value="dialogo"> Diálogo e compreensão</label>
+          <label><input type="radio" name="conflict" value="evitacao"> Evito conflitos</label>
+          <label><input type="radio" name="conflict" value="confronto"> Enfrento diretamente</label>
+          <label><input type="radio" name="conflict" value="mediacao"> Busco mediação</label>
+        </div>
+
+        <!-- Pergunta 9 -->
+        <div class="question">
+          <p>9. Qual é o seu nível de ambição?</p>
+          <label><input type="radio" name="ambition" value="alta"> Alta ambição</label>
+          <label><input type="radio" name="ambition" value="moderada"> Moderada</label>
+          <label><input type="radio" name="ambition" value="baixa"> Baixa</label>
+          <label><input type="radio" name="ambition" value="varia"> Depende do momento</label>
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div class="question">
+          <p>10. Qual é o seu estilo de aparência preferido?</p>
+          <label><input type="radio" name="appearance" value="classico"> Clássico</label>
+          <label><input type="radio" name="appearance" value="moderno"> Moderno</label>
+          <label><input type="radio" name="appearance" value="alternativo"> Alternativo</label>
+          <label><input type="radio" name="appearance" value="esportivo"> Esportivo</label>
+        </div>
+
+        <!-- Adicione mais 5 perguntas aqui -->
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Tela de Carregamento -->
+    <div id="loading-page" class="page">
+      <img src="teste.gif" alt="Carregando" class="loading-gif">
+      <p>Analisando suas respostas...</p>
+    </div>
+
+    <!-- Resultado -->
+    <div id="result-page" class="page">
+      <h2>Seu Tipo Ideal</h2>
+      <p id="result-text"></p>
+      <button id="restart-btn">Refazer</button>
+    </div>
+
+    <div id="result-page" class="page">
+        <h2>Seu Tipo Ideal</h2>
+        <p id="result-text">Carregando...</p>
+        <button id="restart-btn">Refazer</button>
+      </div>
+      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

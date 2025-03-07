@@ -1,0 +1,20 @@
+Meu nome é Italo, e esse é o documento de identificação do projeto.  
+Um site no qual a ideia foi dada por uma amiga chamada Evelly.  
+
+Esse projeto é um algoritmo que consegue decidir seu tipo de homem ideal  
+através de um questionário simples e intuitivo.  
+
+O funcionamento do algoritmo é baseado em regras pré-definidas e  
+inteligência artificial básica para analisar as respostas do usuário.  
+
+Cada pergunta do questionário coleta informações sobre preferências,  
+traços de personalidade desejados e outros fatores que influenciam  
+na escolha do tipo ideal de homem.  
+
+Ao finalizar o questionário, os dados são processados e comparados  
+com um banco de perfis predefinidos. Com base nisso, o algoritmo  
+seleciona o perfil mais compatível e exibe o resultado final.  
+
+Essa abordagem garante que a recomendação seja personalizada,  
+levando em conta as características escolhidas pelo usuário,  
+oferecendo uma experiência divertida e interativa.  
